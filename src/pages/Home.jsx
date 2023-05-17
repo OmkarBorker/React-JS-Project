@@ -1,8 +1,15 @@
 import React from "react";
 import Footer from "../component/Footer";
 import "./Home.css"
+import { useState } from "react";
 
 export default function Home() {
+  const [isStyled, setIsStyled] = useState(false);
+
+  const handleClick = () => {
+    setIsStyled(!isStyled);
+  };
+
   return (
     <>
       <div className="p-5">
@@ -93,11 +100,11 @@ export default function Home() {
           </div>
         </div>
         <div className="button">
-          <p className="button-text">
-            Explore
+          <p className={!isStyled ? 'button-text' : 'button1'} onClick={handleClick}>
+          Explore
           </p>
           <p
-            className="button1" >
+            className={isStyled ? 'button-text' : 'button1'} onClick={handleClick} >
             Explore
           </p>
         </div>

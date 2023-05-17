@@ -1,0 +1,36 @@
+.Footer{
+    border: 0px solid rgb(229, 231, 235);
+    box-sizing: border-box;
+    position: sticky;
+    bottom: 0px;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    background-color: rgb(51 65 85/1);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    box-shadow:
+      var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);
+    color: rgb(255 255 255/1)
+}
+
+.ActiveButton{
+    border: 0px solid rgb(229, 231, 235);
+    display: var(--fa-display, inline-block);
+    height: 1em;
+    vertical-align: -0.125em;
+    border-radius: 9999px;
+    background-color: rgb(71 85 105/1);
+    padding: 0.75rem;
+    overflow: visible;
+    box-sizing: content-box
+}
+
+.Button{
+    border: 0px solid rgb(229, 231, 235);
+    display: var(--fa-display, inline-block);
+    height: 1em;
+    vertical-align: -0.125em;
+    padding: 0.75rem;
+    overflow: visible;
+    box-sizing: content-box
+}
